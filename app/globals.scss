@@ -25,3 +25,10 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+.main-bg {
+  background: var(
+    --pp3-background,
+    linear-gradient(113deg, #984d38 -30.3%, #181e41 58.12%)
+  );
+}
