@@ -37,7 +37,7 @@ export default function Home() {
         </div>
       </div>
       <div className={"mt-[10%] text-7xl " + playfair.className}>
-        I'm Gleb Gutnik
+        I&apos;m Gleb Gutnik
       </div>
       <div className=" text-xl text-stone-500 mt-5">
         Middle software developer and tech enthusiast
