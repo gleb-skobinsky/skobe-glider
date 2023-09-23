@@ -13,7 +13,7 @@ const playfair = Playfair_Display({
 
 export default function Home() {
   return (
-    <div className="main-bg w-[100vw] h-[100vh] flex flex-col items-center">
+    <div className="main-bg w-[100vw] h-fit flex flex-col items-center">
       <div className="w-full h-20 sticky top-0 flex items-center justify-center">
         <div
           className={
@@ -29,6 +29,7 @@ export default function Home() {
           </div>
           <div className="flex flex-row gap-4 items-center">
             <div className="cursor-pointer">About</div>
+            <div className="cursor-pointer">Projects</div>
             <div className="cursor-pointer">Conatct</div>
             <div className="cursor-pointer border-2 border-white p-2">
               Hire Me
@@ -42,6 +43,13 @@ export default function Home() {
       <div className=" text-xl text-stone-500 mt-5">
         Middle software developer and tech enthusiast
       </div>
+      <Image
+        className="rounded-full border-2 border-white my-10"
+        src="/glider.png"
+        width={500}
+        height={700}
+        alt="Picture of the author"
+      />
     </div>
   );
 }
