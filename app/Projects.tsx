@@ -1,10 +1,10 @@
 "use client";
 
 import React from "react";
-import Image from "next/image";
+import { Project } from "./Project";
 import { playfair } from "./fonts";
 import { motion } from "framer-motion";
-import { xMotionVariant, yMotionVariant } from "./motionVariant";
+import { xMotionVariant } from "./motionVariant";
 
 export function Projects({}) {
   return (
@@ -18,23 +18,8 @@ export function Projects({}) {
       >
         Commercial projects
       </motion.div>
-      <motion.div
-        initial="hide"
-        whileInView="show"
-        exit="hide"
-        variants={xMotionVariant}
-        className="secondary-text my-10 text-lg"
-      >
-        • GeoScada
-      </motion.div>
-      <motion.div
-        initial="hide"
-        whileInView="show"
-        exit="hide"
-        variants={yMotionVariant}
-      >
-        <Image src="/geoscada.png" alt="GeoScada" width={800} height={600} />
-      </motion.div>
+      <Project src="/geoscada.png" name="GeoScada" />
+      <Project src="/cdek.png" name="CDEK Bonus" />
     </div>
   );
 }
