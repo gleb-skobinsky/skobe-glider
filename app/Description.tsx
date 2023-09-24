@@ -35,7 +35,7 @@ export function Description({}) {
         whileInView="show"
         exit="hide"
         variants={xMotionVariant}
-        className="text-xl text-stone-500 mb-[10vh] mx-[10%]"
+        className="text-xl secondary-text mb-[10vh] mx-[10%]"
       >
         While fast delivery of high-quality robust solutions to the business is
         always my top priority, I also focus on writing readable, thoroughly
