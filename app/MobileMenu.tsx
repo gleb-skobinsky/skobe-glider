@@ -70,7 +70,26 @@ export function MobileMenu({}) {
             </div>
           </li>
           <li className="border-b border-gray-400 uppercase">
-            <div onClick={() => setIsNavOpen(false)}>Projects</div>
+            <div
+              onClick={() => {
+                setIsNavOpen(false);
+                animateScrollTo("tech-stack");
+                enableScroll();
+              }}
+            >
+              Stack
+            </div>
+          </li>
+          <li className="border-b border-gray-400 uppercase">
+            <div
+              onClick={() => {
+                setIsNavOpen(false);
+                animateScrollTo("projects");
+                enableScroll();
+              }}
+            >
+              Projects
+            </div>
           </li>
           <li className="border-b border-gray-400 uppercase">
             <div onClick={() => setIsNavOpen(false)}>Contact</div>

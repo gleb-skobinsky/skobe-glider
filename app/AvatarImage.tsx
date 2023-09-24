@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import React from "react";
-import { motionVariant } from "./motionVariant";
+import { yMotionVariant } from "./motionVariant";
 
 export function AvatarImage({}) {
   return (
@@ -12,7 +12,7 @@ export function AvatarImage({}) {
       initial="hide"
       whileInView="show"
       exit="hide"
-      variants={motionVariant}
+      variants={yMotionVariant}
     >
       <Image
         className="rounded-full border-2 border-white my-20"

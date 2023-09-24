@@ -2,21 +2,8 @@
 
 import React from "react";
 import { playfair } from "./fonts";
-import { Variants, motion } from "framer-motion";
-
-const xMotionVariant: Variants = {
-  hide: {
-    opacity: 0,
-    x: 100,
-  },
-  show: {
-    opacity: 1,
-    x: 0,
-    transition: {
-      duration: 1,
-    },
-  },
-};
+import { motion } from "framer-motion";
+import { xMotionVariant } from "./motionVariant";
 
 export function Description({}) {
   return (

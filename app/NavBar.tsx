@@ -32,7 +32,12 @@ export function NavBar({}) {
           >
             Stack
           </div>
-          <div className="cursor-pointer">Projects</div>
+          <div
+            className="cursor-pointer"
+            onClick={() => animateScrollTo("projects")}
+          >
+            Projects
+          </div>
           <div className="cursor-pointer">Contact</div>
           <div className="cursor-pointer border-2 border-white p-2">
             Hire Me

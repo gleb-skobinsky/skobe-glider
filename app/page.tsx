@@ -1,3 +1,4 @@
+import { Projects } from "./Projects";
 import { NavBar } from "./NavBar";
 import { TechStack } from "./TechStack";
 import { Description } from "./Description";
@@ -14,7 +15,7 @@ export default function Home() {
       <AvatarImage />
       <TechStack />
       <Description />
-      <div className=""></div>
+      <Projects />
     </div>
   );
 }

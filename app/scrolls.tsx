@@ -1,8 +1,8 @@
+import scrollIntoViewIfNeeded from "scroll-into-view-if-needed";
+
 export function animateScrollTo(id: string) {
-  const about = document.getElementById(id);
-  if (about != null) {
-    about.scrollIntoView({
-      behavior: "smooth",
-    });
+  const el = document.getElementById(id);
+  if (el != null) {
+    scrollIntoViewIfNeeded(el, { duration: 1000 });
   }
 }
