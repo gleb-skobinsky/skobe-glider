@@ -1,17 +1,6 @@
-import { AvatarImage } from "./AvatarImage";
-import { MobileMenu } from "./MobileMenu";
-import { Poppins, Playfair_Display } from "next/font/google";
+import Image from "next/image";
 import GridIcon from "./gridIcon";
-
-const poppins = Poppins({
-  weight: "500",
-  subsets: ["latin"],
-});
-
-const playfair = Playfair_Display({
-  weight: "700",
-  subsets: ["latin"],
-});
+import { poppins, playfair } from "./page";
 
 export default function Home() {
   return (
@@ -37,7 +26,40 @@ export default function Home() {
               Hire Me
             </div>
           </div>
-          <MobileMenu />
+          <section className="MOBILE-MENU flex lg:hidden">
+            <div className="HAMBURGER-ICON space-y-2">
+              <span className="block h-0.5 w-8 animate-pulse bg-gray-600"></span>
+              <span className="block h-0.5 w-8 animate-pulse bg-gray-600"></span>
+              <span className="block h-0.5 w-8 animate-pulse bg-gray-600"></span>
+            </div>
+            <div>
+              <div className="absolute top-0 right-0 px-8 py-8">
+                <svg
+                  className="h-8 w-8 text-gray-600"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <line x1="18" y1="6" x2="6" y2="18" />
+                  <line x1="6" y1="6" x2="18" y2="18" />
+                </svg>
+              </div>
+              <ul className="NAVIGATION-MOBILE-OPEN flex flex-col items-center justify-between">
+                <li className="border-b border-gray-400 uppercase">
+                  <a href="/about">About</a>
+                </li>
+                <li className="border-b border-gray-400 uppercase">
+                  <a href="/">Projects</a>
+                </li>
+                <li className="border-b border-gray-400 uppercase">
+                  <a href="/">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </section>
         </div>
       </div>
       <div className={`mt-[10%] text-7xl ${playfair.className}`}>
@@ -46,7 +68,14 @@ export default function Home() {
       <div className=" text-xl text-stone-500 mt-5">
         Mid-level software developer and tech enthusiast
       </div>
-      <AvatarImage />
+      <div className="rounded-full border-2 border-white my-20 w-[300px] md:w-[500px] h-[300px] md:h-[500px] relative">
+        <Image
+          className="rounded-full"
+          src="/glider.png"
+          alt="Picture of the author"
+          layout="fill"
+        />
+      </div>
       <div className="bg-slate-950 py-20 w-full px-[10%]">
         <div className={`mb-20 text-3xl ${poppins.className}`}>
           My experience in the industry:
