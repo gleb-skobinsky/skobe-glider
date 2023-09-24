@@ -14,7 +14,7 @@ const playfair = Playfair_Display({
 
 export default function Home() {
   return (
-    <div className="main-bg w-[100vw] h-fit flex flex-col items-center">
+    <div className="main-bg w-[100vw] h-fit flex flex-col items-center text-white">
       <div className="w-full h-20 sticky top-0 flex items-center justify-center">
         <div
           className={
@@ -41,7 +41,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className={"mt-[10%] text-7xl " + playfair.className}>
+      <div className={`mt-[10%] text-7xl ${playfair.className}`}>
         I&apos;m Gleb Gutnik
       </div>
       <div className=" text-xl text-stone-500 mt-5">
@@ -55,7 +55,7 @@ export default function Home() {
         alt="Picture of the author"
       />
       <div className="bg-slate-950 py-20 w-full px-[10%]">
-        <div className={" mb-20 text-3xl " + poppins.className}>
+        <div className={`mb-20 text-3xl ${poppins.className}`}>
           My experience in the industry:
         </div>
         <div className="grid grid-cols-5 gap-y-20 gap-x-4">
@@ -74,7 +74,7 @@ export default function Home() {
           <GridIcon src="/vuejs.svg" alt="Vue.js" />
         </div>
       </div>
-      <h1 className={" my-16 text-4xl " + playfair.className}>
+      <h1 className={`my-16 text-4xl ${playfair.className}`}>
         Software developer at <a href="https://www.smart-dn.ru/">SmartDN</a>
       </h1>
       <div className="text-xl text-stone-500 mb-[10vh] mx-[10%]">
