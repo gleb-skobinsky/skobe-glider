@@ -3,7 +3,7 @@ import React from "react";
 
 export function AvatarImage({}) {
   return (
-    <div className="grid-icon">
+    <div className="grid-icon px-10">
       <Image
         className="rounded-full border-2 border-white my-20"
         src="/glider.png"

@@ -40,10 +40,12 @@ export default function Home() {
           <MobileMenu />
         </div>
       </div>
-      <div className={`mt-[10%] text-7xl ${playfair.className}`}>
+      <div
+        className={`mx-[10%] mt-[10%] text-7xl text-center ${playfair.className}`}
+      >
         I&apos;m Gleb Gutnik
       </div>
-      <div className=" text-xl text-stone-500 mt-5">
+      <div className="mx-[10%] text-xl text-stone-500 mt-5 text-center">
         Mid-level software developer and tech enthusiast
       </div>
       <AvatarImage />
@@ -51,7 +53,7 @@ export default function Home() {
         <div className={`mb-20 text-3xl ${poppins.className}`}>
           My experience in the industry:
         </div>
-        <div className="grid grid-cols-5 gap-y-20 gap-x-4">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-y-20 gap-x-4">
           <GridIcon src="/kotlin.svg" alt="Kotlin language" />
           <GridIcon src="/kmp.svg" alt="Kotlin Multiplatform" />
           <GridIcon src="/compose.png" alt="Compose Multiplatform" />
@@ -67,7 +69,9 @@ export default function Home() {
           <GridIcon src="/vuejs.svg" alt="Vue.js" />
         </div>
       </div>
-      <h1 className={`my-16 text-4xl ${playfair.className}`}>
+      <h1
+        className={`mx-[10%] my-16 text-4xl text-center ${playfair.className}`}
+      >
         Software developer at <a href="https://www.smart-dn.ru/">SmartDN</a>
       </h1>
       <div className="text-xl text-stone-500 mb-[10vh] mx-[10%]">
