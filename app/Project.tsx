@@ -7,7 +7,7 @@ import Image from "next/image";
 
 export function Project(props: { src: string; name: string }) {
   return (
-    <>
+    <div>
       <motion.div
         initial="hide"
         whileInView="show"
@@ -25,6 +25,6 @@ export function Project(props: { src: string; name: string }) {
       >
         <Image src={props.src} alt={props.name} width={800} height={600} />
       </motion.div>
-    </>
+    </div>
   );
 }

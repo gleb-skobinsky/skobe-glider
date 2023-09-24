@@ -18,8 +18,35 @@ export function Projects({}) {
       >
         Commercial projects
       </motion.div>
-      <Project src="/geoscada.png" name="GeoScada" />
-      <Project src="/cdek.png" name="CDEK Bonus" />
+      <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <Project src="/geoscada.png" name="GeoScada" />
+        <Project src="/cdek.png" name="CDEK Bonus" />
+      </div>
+      <motion.div
+        initial="hide"
+        whileInView="show"
+        exit="hide"
+        variants={xMotionVariant}
+        className="flex flex-col gap-4 mt-8 text-lg"
+      >
+        <div>Also:</div>
+        <div>• CDEK WMS</div>
+        <div>• SmartDN Blank Editor</div>
+      </motion.div>
+      <motion.div
+        initial="hide"
+        whileInView="show"
+        exit="hide"
+        variants={xMotionVariant}
+        className={`text-4xl text-white my-10 ${playfair.className}`}
+      >
+        Pet projects
+      </motion.div>
+      <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <Project src="/chirrio.jpg" name="Chirrio Messenger" />
+        <Project src="/sysm.png" name="System Metrics Tracker" />
+        <Project src="/currenciesapp.png" name="Currencies App" />
+      </div>
     </div>
   );
 }
