@@ -1,3 +1,4 @@
+import { Contacts } from "./Contacts";
 import { Projects } from "./Projects";
 import { NavBar } from "./NavBar";
 import { TechStack } from "./TechStack";
@@ -5,6 +6,7 @@ import { Description } from "./Description";
 import { MainSubTitle } from "./MainSubTitle";
 import { MainTitle } from "./MainTitle";
 import { AvatarImage } from "./AvatarImage";
+import { playfair } from "./fonts";
 
 export default function Home() {
   return (
@@ -16,6 +18,8 @@ export default function Home() {
       <TechStack />
       <Description />
       <Projects />
+      <Contacts />
+      <div className="h-40"></div>
     </div>
   );
 }

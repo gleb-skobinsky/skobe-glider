@@ -92,7 +92,15 @@ export function MobileMenu({}) {
             </div>
           </li>
           <li className="border-b border-gray-400 uppercase">
-            <div onClick={() => setIsNavOpen(false)}>Contact</div>
+            <div
+              onClick={() => {
+                setIsNavOpen(false);
+                animateScrollTo("contacts-section");
+                enableScroll();
+              }}
+            >
+              Contact
+            </div>
           </li>
         </ul>
       </div>
