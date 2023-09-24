@@ -6,7 +6,6 @@ import { Description } from "./Description";
 import { MainSubTitle } from "./MainSubTitle";
 import { MainTitle } from "./MainTitle";
 import { AvatarImage } from "./AvatarImage";
-import { playfair } from "./fonts";
 
 export default function Home() {
   return (
