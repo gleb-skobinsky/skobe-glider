@@ -46,6 +46,7 @@ export function Projects({}) {
         <Project src="/chirrio.jpg" name="Chirrio Messenger" />
         <Project src="/sysm.png" name="System Metrics Tracker" />
         <Project src="/currenciesapp.png" name="Currencies App" />
+        <Project src="/darkforce.png" name="Dark Force Game" />
       </div>
     </div>
   );
