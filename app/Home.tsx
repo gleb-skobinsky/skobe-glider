@@ -1,16 +1,6 @@
 import Image from "next/image";
 import GridIcon from "./gridIcon";
-import { Poppins, Playfair_Display } from "next/font/google";
-
-const poppins = Poppins({
-  weight: "500",
-  subsets: ["latin"],
-});
-
-const playfair = Playfair_Display({
-  weight: "700",
-  subsets: ["latin"],
-});
+import { playfair, poppins } from "./page";
 
 export default function Home() {
   return (

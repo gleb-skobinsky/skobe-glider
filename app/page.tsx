@@ -1,14 +1,17 @@
+import { Description } from "./Description";
+import { MainSubTitle } from "./MainSubTitle";
+import { MainTitle } from "./MainTitle";
 import { AvatarImage } from "./AvatarImage";
 import { MobileMenu } from "./MobileMenu";
 import { Poppins, Playfair_Display } from "next/font/google";
 import GridIcon from "./gridIcon";
 
-const poppins = Poppins({
+export const poppins = Poppins({
   weight: "500",
   subsets: ["latin"],
 });
 
-const playfair = Playfair_Display({
+export const playfair = Playfair_Display({
   weight: "700",
   subsets: ["latin"],
 });
@@ -40,14 +43,8 @@ export default function Home() {
           <MobileMenu />
         </div>
       </div>
-      <div
-        className={`mx-[10%] mt-[10%] text-7xl text-center ${playfair.className}`}
-      >
-        I&apos;m Gleb Gutnik
-      </div>
-      <div className="mx-[10%] text-xl text-stone-500 mt-5 text-center">
-        Mid-level software developer and tech enthusiast
-      </div>
+      <MainTitle />
+      <MainSubTitle />
       <AvatarImage />
       <div className="bg-slate-950 py-20 w-full px-[10%]">
         <div className={`mb-20 text-3xl ${poppins.className}`}>
@@ -69,21 +66,7 @@ export default function Home() {
           <GridIcon src="/vuejs.svg" alt="Vue.js" />
         </div>
       </div>
-      <h1
-        className={`mx-[10%] my-16 text-4xl text-center ${playfair.className}`}
-      >
-        Software developer at <a href="https://www.smart-dn.ru/">SmartDN</a>
-      </h1>
-      <div className="text-xl text-stone-500 mb-[10vh] mx-[10%]">
-        While fast delivery of high-quality robust solutions to the business is
-        always my top priority, I also focus on writing readable, thoroughly
-        tested and well-documented code. I&apos;m obsessed with following best
-        practices and design patterns that are of importance to the stack
-        I&apos;m using, be it MVVM for Android with Compose, multimodule
-        architecture for a Ktor backend or microservices for a FastAPI app.
-        Industriousness, commitment, and strive to perfection are the three
-        pillars of my work as an engineer.
-      </div>
+      <Description />
       <div className=""></div>
     </div>
   );
