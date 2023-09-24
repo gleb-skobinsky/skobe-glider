@@ -15,7 +15,7 @@ const playfair = Playfair_Display({
 
 export default function Home() {
   return (
-    <div className="main-bg w-[100vw] h-fit flex flex-col items-center text-white">
+    <div className=" overflow-x-hidden main-bg w-[100vw] h-fit flex flex-col items-center text-white">
       <div className="w-full h-20 sticky top-0 flex items-center justify-center">
         <div
           className={`flex flex-row text-xl w-[80%] justify-between items-center ${poppins.className}`}
