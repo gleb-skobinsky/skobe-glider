@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
+import { animateScrollTo } from "./scrolls";
 
 function disableScroll() {
   document.body.style.cssText += "overflow:clip";
@@ -58,7 +59,15 @@ export function MobileMenu({}) {
       >
         <ul className="NAVIGATION-MOBILE-OPEN flex flex-col justify-between gap-y-6">
           <li className="border-b border-gray-400 uppercase">
-            <div onClick={() => setIsNavOpen(false)}>About</div>
+            <div
+              onClick={() => {
+                setIsNavOpen(false);
+                animateScrollTo("about-section");
+                enableScroll();
+              }}
+            >
+              About
+            </div>
           </li>
           <li className="border-b border-gray-400 uppercase">
             <div onClick={() => setIsNavOpen(false)}>Projects</div>

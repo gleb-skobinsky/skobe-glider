@@ -20,7 +20,7 @@ const xMotionVariant: Variants = {
 
 export function Description({}) {
   return (
-    <>
+    <div id="about-section">
       <motion.h1
         initial="hide"
         whileInView="show"
@@ -46,6 +46,6 @@ export function Description({}) {
         Industriousness, commitment, and strive to perfection are the three
         pillars of my work as an engineer.
       </motion.div>
-    </>
+    </div>
   );
 }

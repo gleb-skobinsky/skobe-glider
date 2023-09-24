@@ -4,7 +4,7 @@ import { poppins } from "./fonts";
 
 export function TechStack({}) {
   return (
-    <div className="bg-slate-950 py-20 w-full px-[10%]">
+    <div id="tech-stack" className="bg-slate-950 py-20 w-full px-[10%]">
       <div className={`mb-20 text-3xl ${poppins.className}`}>
         My experience in the industry:
       </div>

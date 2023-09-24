@@ -1,6 +1,8 @@
+"use client";
 import { MobileMenu } from "./MobileMenu";
 import { poppins } from "./fonts";
 import React from "react";
+import { animateScrollTo } from "./scrolls";
 
 export function NavBar({}) {
   return (
@@ -18,7 +20,18 @@ export function NavBar({}) {
           <div>Gleb Gutnik</div>
         </div>
         <div className="hidden lg:flex flex-row gap-4 items-center">
-          <div className="cursor-pointer">About</div>
+          <div
+            className="cursor-pointer"
+            onClick={() => animateScrollTo("about-section")}
+          >
+            About
+          </div>
+          <div
+            className="cursor-pointer"
+            onClick={() => animateScrollTo("tech-stack")}
+          >
+            Stack
+          </div>
           <div className="cursor-pointer">Projects</div>
           <div className="cursor-pointer">Contact</div>
           <div className="cursor-pointer border-2 border-white p-2">
