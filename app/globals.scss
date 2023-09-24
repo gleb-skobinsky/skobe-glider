@@ -33,3 +33,7 @@ body {
     linear-gradient(113deg, #984d38 -30.3%, #181e41 58.12%)
   );
 }
+
+.grid-item {
+  @apply flex flex-row justify-center items-center h-[100px];
+}
