@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { playfair } from "./page";
+import { playfair } from "./fonts";
 import { motion } from "framer-motion";
 import { motionVariant } from "./motionVariant";
 

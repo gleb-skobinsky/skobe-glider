@@ -3,18 +3,8 @@ import { MainSubTitle } from "./MainSubTitle";
 import { MainTitle } from "./MainTitle";
 import { AvatarImage } from "./AvatarImage";
 import { MobileMenu } from "./MobileMenu";
-import { Poppins, Playfair_Display } from "next/font/google";
 import GridIcon from "./gridIcon";
-
-export const poppins = Poppins({
-  weight: "500",
-  subsets: ["latin"],
-});
-
-export const playfair = Playfair_Display({
-  weight: "700",
-  subsets: ["latin"],
-});
+import { poppins } from "./fonts";
 
 export default function Home() {
   return (

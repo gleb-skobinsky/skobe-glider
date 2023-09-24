@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { playfair } from "./page";
+import { playfair } from "./fonts";
 import { Variants, motion } from "framer-motion";
 
 const xMotionVariant: Variants = {
