@@ -54,3 +54,7 @@ body {
   min-width: 250px;
   min-height: 100vh;
 }
+
+.avatar {
+  @apply w-[300px] md:w-[500px] h-[300px] md:h-[500px];
+}

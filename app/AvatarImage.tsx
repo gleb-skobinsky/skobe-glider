@@ -3,12 +3,13 @@ import React from "react";
 
 export function AvatarImage({}) {
   return (
-    <div className="relative z-0 rounded-full border-2 border-white my-20 w-[300px] md:w-[500px] h-[300px] md:h-[500px]">
+    <div className="grid-icon">
       <Image
-        className="rounded-full"
+        className="rounded-full border-2 border-white my-20"
         src="/glider.png"
         alt="Picture of the author"
-        layout="fill"
+        width={500}
+        height={500}
       />
     </div>
   );
