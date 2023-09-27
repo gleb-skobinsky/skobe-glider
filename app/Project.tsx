@@ -5,7 +5,7 @@ import { xMotionVariant, yMotionVariant } from "./motionVariant";
 import { motion } from "framer-motion";
 import Image from "next/image";
 
-export function Project(props: { src: string; name: string }) {
+export function Project(props: { src: string; name: string; link: string }) {
   return (
     <div>
       <motion.div
@@ -17,14 +17,16 @@ export function Project(props: { src: string; name: string }) {
       >
         • {props.name}
       </motion.div>
-      <motion.div
+      <motion.a
         initial="hide"
         whileInView="show"
         exit="hide"
         variants={yMotionVariant}
+        href={props.link}
+        target="_blank"
       >
         <Image src={props.src} alt={props.name} width={800} height={600} />
-      </motion.div>
+      </motion.a>
     </div>
   );
 }

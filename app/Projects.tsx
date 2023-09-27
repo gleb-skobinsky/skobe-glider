@@ -19,8 +19,16 @@ export function Projects({}) {
         Commercial projects
       </motion.div>
       <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-8">
-        <Project src="/geoscada.png" name="GeoScada" />
-        <Project src="/cdek.png" name="CDEK Bonus" />
+        <Project
+          src="/geoscada.png"
+          name="GeoScada"
+          link="https://www.smart-dn.ru/"
+        />
+        <Project
+          src="/cdek.png"
+          name="CDEK Bonus"
+          link="https://bonus.cdek.ru/"
+        />
       </div>
       <motion.div
         initial="hide"
@@ -43,10 +51,26 @@ export function Projects({}) {
         Pet projects
       </motion.div>
       <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-8">
-        <Project src="/chirrio.jpg" name="Chirrio Messenger" />
-        <Project src="/sysm.png" name="System Metrics Tracker" />
-        <Project src="/currenciesapp.png" name="Currencies App" />
-        <Project src="/darkforce.png" name="Dark Force Game" />
+        <Project
+          src="/chirrio.jpg"
+          name="Chirrio Messenger"
+          link="https://github.com/gleb-skobinsky/compose-connect"
+        />
+        <Project
+          src="/sysm.png"
+          name="System Metrics Tracker"
+          link="https://github.com/gleb-skobinsky/system-metrics"
+        />
+        <Project
+          src="/currenciesapp.png"
+          name="Currencies App"
+          link="https://github.com/gleb-skobinsky/currencies"
+        />
+        <Project
+          src="/darkforce.png"
+          name="Dark Force Game"
+          link="https://github.com/gleb-skobinsky/frodojourney"
+        />
       </div>
     </div>
   );
