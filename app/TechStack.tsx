@@ -22,6 +22,8 @@ export function TechStack({}) {
         <GridIcon src="/postgres.png" alt="PostgreSQL" />
         <GridIcon src="/js.svg" alt="JavaScript" />
         <GridIcon src="/vuejs.svg" alt="Vue.js" />
+        <GridIcon src="/fastapi.svg" alt="FastAPI" />
+        <GridIcon src="/django.svg" alt="Django" />
       </div>
     </div>
   );
