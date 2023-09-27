@@ -17,16 +17,16 @@ export function Project(props: { src: string; name: string; link: string }) {
       >
         • {props.name}
       </motion.div>
-      <motion.a
+      <motion.div
         initial="hide"
         whileInView="show"
         exit="hide"
         variants={yMotionVariant}
-        href={props.link}
-        target="_blank"
       >
-        <Image src={props.src} alt={props.name} width={800} height={600} />
-      </motion.a>
+        <a href={props.link} target="_blank">
+          <Image src={props.src} alt={props.name} width={800} height={600} />
+        </a>
+      </motion.div>
     </div>
   );
 }
