@@ -20,6 +20,11 @@ export function Projects({}) {
       </motion.div>
       <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-8">
         <Project
+          src="/ourmts.png"
+          name="Our MTS App"
+          link="https://our.mts.ru/"
+        ></Project>
+        <Project
           src="/geoscada.png"
           name="GeoScada"
           link="https://www.smart-dn.ru/"

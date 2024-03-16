@@ -15,7 +15,7 @@ export function Description({}) {
         variants={xMotionVariant}
         className={`mx-[10%] my-16 text-4xl text-center ${playfair.className}`}
       >
-        Software developer at <a href="https://www.smart-dn.ru/">SmartDN</a>
+        Software developer at <a href="https://mts-digital.ru/">MTS Digital</a>
       </motion.h1>
       <motion.div
         initial="hide"

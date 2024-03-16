@@ -10,10 +10,13 @@ export function TechStack({}) {
       </div>
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-y-20 gap-x-4">
         <GridIcon src="/kotlin.svg" alt="Kotlin language" />
-        <GridIcon src="/kmp.svg" alt="Kotlin Multiplatform" />
-        <GridIcon src="/compose.png" alt="Compose Multiplatform" />
+        <GridIcon src="/kmp.svg" alt="Kotlin Multiplatform Mobile" />
+        <GridIcon src="/compose.png" alt="Jetpack Compose" />
+        <GridIcon src="/compose_mpp.svg" alt="Compose Multiplatform" />
         <GridIcon src="/ktor.svg" alt="Ktor library" />
         <GridIcon src="/gradle.svg" alt="Gradle build tool" />
+        <GridIcon src="/sqldelight.svg" alt="SQLDelight" />
+        <GridIcon src="/swiftui.png" alt="Swift UI" />
         <GridIcon src="/docker.svg" alt="Docker" />
         <GridIcon src="/nginx.svg" alt="Nginx" />
         <GridIcon src="/python.svg" alt="Python" />
