@@ -3,7 +3,6 @@
 import React from "react";
 import { xMotionVariant, yMotionVariant } from "./motionVariant";
 import { motion } from "framer-motion";
-import Image from "next/image";
 
 export function Project(props: { src: string; name: string; link: string }) {
   return (
