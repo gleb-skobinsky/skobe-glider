@@ -23,9 +23,11 @@ export function Project(props: { src: string; name: string; link: string }) {
         exit="hide"
         variants={yMotionVariant}
       >
-        <div className="max-w-[800px] max-h-[600px]">
-          <img src={props.src} alt={props.name} className="max-h-[600px]" />
-        </div>
+        <a href={props.link} target="_blank">
+          <div className="max-w-[800px] max-h-[600px]">
+            <img src={props.src} alt={props.name} className="max-h-[600px]" />
+          </div>
+        </a>
       </motion.div>
     </div>
   );
