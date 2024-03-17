@@ -1,0 +1,25 @@
+type LangDict = {
+  Lang: string;
+  NotLang: string;
+  About: string;
+  Stack: string;
+  Projects: string;
+  Contact: string;
+  HireMe: string;
+  Name: string;
+  MainTitle: string;
+  MainSubtitle: string;
+  Experience: string;
+  DescTitle: string;
+  Company: string;
+  DescBody: string;
+  Commercial: string;
+  Also: string;
+  OurMTS: string;
+  Pet: string;
+  Chirrio: string;
+  SMT: string;
+  Curr: string;
+  DFG: string;
+  ContactMe: string;
+};

@@ -2,11 +2,11 @@
 
 import { ContactLink } from "./ContactLink";
 import React from "react";
-import { playfair } from "./fonts";
+import { playfair } from "../fonts";
 import { motion } from "framer-motion";
 import { xMotionVariant, yMotionVariant } from "./motionVariant";
 
-export function Contacts({}) {
+export function Contacts(props: { title: string }) {
   return (
     <div id="contacts-section" className="py-10 w-full main-bg px-[10%]">
       <motion.div
@@ -16,7 +16,7 @@ export function Contacts({}) {
         variants={xMotionVariant}
         className={` text-4xl ${playfair.className}`}
       >
-        Contact me
+        {props.title}
       </motion.div>
       <motion.div
         initial="hide"

@@ -3,6 +3,8 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { animateScrollTo } from "./scrolls";
+import LocaleSelector from "./LocaleSelector";
+import { download } from "./NavBar";
 
 function disableScroll() {
   document.body.style.cssText += "overflow:clip";
@@ -12,7 +14,7 @@ function enableScroll() {
   document.body.style.cssText += "overflow:scroll";
 }
 
-export function MobileMenu({}) {
+export function MobileMenu(props: { dict: LangDict }) {
   const [isNavOpen, setIsNavOpen] = useState(false);
   return (
     <motion.section className="MOBILE-MENU absolute top-0 right-0 flex flex-col lg:hidden z-10">
@@ -58,6 +60,7 @@ export function MobileMenu({}) {
         }`}
       >
         <ul className="NAVIGATION-MOBILE-OPEN flex flex-col justify-between gap-y-6">
+          <LocaleSelector langDict={props.dict} />
           <li className="border-b border-gray-400 uppercase">
             <div
               onClick={() => {
@@ -66,7 +69,7 @@ export function MobileMenu({}) {
                 enableScroll();
               }}
             >
-              About
+              {props.dict.About}
             </div>
           </li>
           <li className="border-b border-gray-400 uppercase">
@@ -77,7 +80,7 @@ export function MobileMenu({}) {
                 enableScroll();
               }}
             >
-              Stack
+              {props.dict.Stack}
             </div>
           </li>
           <li className="border-b border-gray-400 uppercase">
@@ -88,7 +91,7 @@ export function MobileMenu({}) {
                 enableScroll();
               }}
             >
-              Projects
+              {props.dict.Projects}
             </div>
           </li>
           <li className="border-b border-gray-400 uppercase">
@@ -99,9 +102,15 @@ export function MobileMenu({}) {
                 enableScroll();
               }}
             >
-              Contact
+              {props.dict.Contact}
             </div>
           </li>
+          <a
+            onClick={() => download()}
+            className="cursor-pointer border-2 border-white p-2"
+          >
+            {props.dict.HireMe}
+          </a>
         </ul>
       </div>
     </motion.section>

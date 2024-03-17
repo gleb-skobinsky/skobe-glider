@@ -2,11 +2,11 @@
 
 import React from "react";
 import { Project } from "./Project";
-import { playfair } from "./fonts";
+import { playfair } from "../fonts";
 import { motion } from "framer-motion";
 import { xMotionVariant } from "./motionVariant";
 
-export function Projects({}) {
+export function Projects(props: { dict: LangDict }) {
   return (
     <div id="projects" className="bg-slate-900 py-12 w-full px-[10%]">
       <motion.div
@@ -16,12 +16,12 @@ export function Projects({}) {
         variants={xMotionVariant}
         className={`text-4xl text-white mb-10 ${playfair.className}`}
       >
-        Commercial projects
+        {props.dict.Commercial}
       </motion.div>
       <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-8">
         <Project
           src="/ourmts.png"
-          name="Our MTS App"
+          name={props.dict.OurMTS}
           link="https://our.mts.ru/"
         ></Project>
         <Project
@@ -42,7 +42,7 @@ export function Projects({}) {
         variants={xMotionVariant}
         className="flex flex-col gap-4 mt-8 text-lg"
       >
-        <div>Also:</div>
+        <div>{props.dict.Also}</div>
         <div>• CDEK WMS</div>
         <div>• SmartDN Blank Editor</div>
       </motion.div>
@@ -53,27 +53,27 @@ export function Projects({}) {
         variants={xMotionVariant}
         className={`text-4xl text-white my-10 ${playfair.className}`}
       >
-        Pet projects
+        {props.dict.Pet}
       </motion.div>
       <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-8">
         <Project
           src="/chirrio.jpg"
-          name="Chirrio Messenger"
+          name={props.dict.Chirrio}
           link="https://github.com/gleb-skobinsky/compose-connect"
         />
         <Project
           src="/sysm.png"
-          name="System Metrics Tracker"
+          name={props.dict.SMT}
           link="https://github.com/gleb-skobinsky/system-metrics"
         />
         <Project
           src="/currenciesapp.png"
-          name="Currencies App"
+          name={props.dict.Curr}
           link="https://github.com/gleb-skobinsky/currencies"
         />
         <Project
           src="/darkforce.png"
-          name="Dark Force Game"
+          name={props.dict.DFG}
           link="https://github.com/gleb-skobinsky/frodojourney"
         />
       </div>

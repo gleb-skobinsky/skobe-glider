@@ -1,12 +1,12 @@
 import GridIcon from "./gridIcon";
 import React from "react";
-import { poppins } from "./fonts";
+import { poppins } from "../fonts";
 
-export function TechStack({}) {
+export function TechStack(props: { header: string }) {
   return (
     <div id="tech-stack" className="bg-slate-950 py-20 w-full px-[10%]">
       <div className={`mb-20 text-3xl ${poppins.className}`}>
-        My experience in the industry:
+        {props.header}
       </div>
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-y-20 gap-x-4">
         <GridIcon src="/kotlin.svg" alt="Kotlin language" />
