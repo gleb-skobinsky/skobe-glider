@@ -20,10 +20,15 @@ export function Projects(props: { dict: LangDict }) {
       </motion.div>
       <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-8">
         <Project
+          src="/vouwallet.png"
+          name={"VouWallet"}
+          link="https://go.vouwallet.io/"
+        />
+        <Project
           src="/ourmts.png"
           name={props.dict.OurMTS}
           link="https://our.mts.ru/"
-        ></Project>
+        />
         <Project
           src="/geoscada.png"
           name="GeoScada"
